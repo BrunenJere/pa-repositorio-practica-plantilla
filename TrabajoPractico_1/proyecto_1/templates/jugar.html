@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        
+        h1{ 
+          font-size: 40px;
+          color: rgb(125, 227, 207);  
+          padding: 5px;
+
+        }   
+        .cuadro-frase {
+          border: 1px solid rgb(67, 167, 162);
+        }
+        body{
+          background-color: black;
+        }
+        input {
+          height: 50px;  
+          width: 100%;
+        }
+        p{ 
+          border: 1px solid rgba(64, 196, 176, 0.789);
+          color:beige; 
+          height: 50px; 
+          font-size: 25px; 
+          margin: 10px 500px;  
+          margin-top: 10px;
+
+        }  
+
+
+        button {    
+            color: rgb(22, 152, 161); 
+            text-decoration: none;
+            font-size: 20px;
+            height: 50px; 
+            width: 100px;
+            border: 2px solid rgb(22, 152, 161);
+            background-color: black; 
+            color:  rgb(4, 71, 71); 
+            transition: all .2s; 
+            margin: 30px 50%; 
+            margin-left: 630px;
+        } 
+        button:hover {
+            color: black; 
+            background:linear-gradient(to right, rgb(13, 83, 80), rgb(13, 97, 93), rgb(11, 88, 133));
+        } 
+        a{
+            color:  rgb(88, 228, 238);;
+            text-decoration: none;
+        }  
+        form {
+          margin-top: 50px;
+        }
+    
+         </style>
+</head>
+<body>
+    <body></body>
+    
+        
+        <strong><div class="cuadro-frase"><h1>{{frase}}</h1></div></strong>
+          
+          
+                <form method="POST">
+                <label for="respuesta">  
+                <p><input type="submit" name="respuesta" value="{{opcion1}}"> </p></label> <br> 
+
+                <label for="respuesta">  
+                <p><input type="submit" name="respuesta" value="{{opcion2}}"> </p></label> <br> 
+
+                <label for="respuesta">  
+                <p><input type="submit" name="respuesta" value="{{opcion3}}"> </p></label> <br>
+                </form>
+                
+
+
+    <div><button>
+        <a href="/">volver</a>
+      </button></div>
+      
+</body>
+</html>

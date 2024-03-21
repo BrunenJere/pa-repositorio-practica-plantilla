@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title> 
+    <style>
+        h1{ 
+            background-color:  rgb(7, 80, 76);
+            color:  rgb(88, 228, 238);  
+            border: 2px solid rgb(88, 228, 238); 
+            font-size: 38px;
+            height: 100px; 
+            width: 600px; 
+            margin: auto;   
+            padding-left: 150px; 
+            padding-top: 50px;
+            margin-top: 50px;  
+            margin-bottom: 50px;
+        }  
+        body {
+            background:black
+        }
+        li {  
+            margin: 10px;
+            margin-left: -20px;
+            border: 1px solid black;  
+            background-color: beige;
+            padding: 8px; 
+            transition: all .2s;
+        } 
+        li:hover { 
+            color: white;
+            background:linear-gradient(to right, rgb(13, 83, 80), rgb(13, 97, 93), rgb(11, 88, 133));
+        
+        }  
+        a{
+            color:  rgb(88, 228, 238);;
+            
+            text-decoration: none;
+        } 
+
+        button {    
+            color: rgb(22, 152, 161); 
+            text-decoration: none;
+            font-size: 20px;
+            height: 50px; 
+            width: 100px;
+            border: 2px solid rgb(22, 152, 161);
+            background-color: black; 
+            color:  rgb(4, 71, 71); 
+            transition: all .2s;
+        } 
+        button:hover {
+            color: black; 
+            background:linear-gradient(to right, rgb(13, 83, 80), rgb(13, 97, 93), rgb(11, 88, 133));
+        }
+    </style>
+</head>
+<body> 
+    <div><button>
+        <a href="/">volver</a>
+      </button></div>
+    <h1>Las peliculas disponibles son:</h1>
+    <ol>
+    <div>{% for pelicula in peliculas %}
+        
+            <li>{{ pelicula}}</li>            
+        
+    {% endfor %}
+    </ol>
+    </div>
+    
+      
+</body>
+</html>
