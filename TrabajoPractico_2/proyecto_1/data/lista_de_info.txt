@@ -1,0 +1,13 @@
+Profesor,Franco,4
+Director,Pablo,8
+Profesor,Cintia,5
+Profesor,Mauro,4
+Director,Belen,45
+Director,Diana,3434
+Estudiante,Viki,98
+Estudiante,More,456
+Estudiante,Vale,100
+Estudiante,Bauti,2
+Departamento,Calculo,<modules.clases.Profesor object at 0x000002B2C7949010>
+Departamento,Algebra,<modules.clases.Profesor object at 0x000002B2C7A93A90>
+Departamento,Programacion,<modules.clases.Profesor object at 0x000001DEA8FA3990>
